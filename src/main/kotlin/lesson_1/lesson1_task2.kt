@@ -12,7 +12,7 @@ fun main() {
 
     //println(numberOfWorkers)
 
-    numberOfWorkers = numberOfWorkers - 1
+    numberOfWorkers -= 1
 
     println(numberOfWorkers)
 
