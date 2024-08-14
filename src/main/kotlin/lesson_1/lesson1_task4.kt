@@ -16,7 +16,4 @@ fun main() {
     println(partOfYear)
     println(apogee)
 
-
-
-
 }
