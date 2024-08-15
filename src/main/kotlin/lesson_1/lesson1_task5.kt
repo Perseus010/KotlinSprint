@@ -1,13 +1,16 @@
 package org.example.lesson_1
 
+const val secondsPerHour: Int = 3600
+const val secondsPerMinute: Int = 60
+
 fun main() {
 
     val secondsOfCosmos: Int = 6_480
 
-    val hours: Int = secondsOfCosmos / 3600
-    val minutes: Int = secondsOfCosmos % 3600 / 60
-    val seconds: Int = secondsOfCosmos % 3600 % 60
+    val hours: Int = secondsOfCosmos / secondsPerHour
+    val minutes: Int = secondsOfCosmos % secondsPerHour / secondsPerMinute
+    val seconds: Int = secondsOfCosmos % secondsPerHour % secondsPerMinute
 
-    println("$hours".padStart(2, '0') + ":" + "$minutes".padStart(2, '0') + ":" + "$seconds".padStart(2, '0'))
+    println("%02d:%02d:%02d".format(hours, minutes, seconds))
 
 }
